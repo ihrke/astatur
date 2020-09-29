@@ -1,0 +1,12 @@
+citHeader("To cite astatur in publications use:")
+
+citEntry(entry = "book",
+  title        = "Applied Statistics using R",
+  author       = personList(as.person("Mehmet Mehmetoglu"),
+                   as.person("Matthias Mittner")),
+  year         = "XXXX",
+  url          = "",
+  publisher = "XXXX",
+  textVersion  =
+  paste("XXXX")
+)

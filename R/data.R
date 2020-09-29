@@ -7,13 +7,13 @@
 #'
 #' @format A data frame with 504 rows and 4 variables:
 #' \describe{
-#'   \item{kjoenn}{Gender (one of "Menn"-male or "Kvinner"-female)}
-#'   \item{alder}{agegroup, coded are <18, 19-29 and >30}
-#'   \item{aar}{year}
-#'   \item{studenter}{number of new students}
+#'   \item{gender}{Gender (one of "male" or "female")}
+#'   \item{age}{agegroup, coded as <18, 19-29 and >30}
+#'   \item{year}{year}
+#'   \item{students}{number of new students}
 #' }
 #' @source \url{https://www.ssb.no/}
-"nyeStudenter"
+"newStudents"
 
 #' Body-height in cm collected from a statistics course at a norwegian university
 #' across three years.
@@ -24,9 +24,9 @@
 #'
 #' @format A data frame with 99 rows and 3 variables:
 #' \describe{
-#'   \item{kjoenn}{Gender (one of "mann"-male or "kvinne"-female)}
-#'   \item{aar}{year}
-#'   \item{hoeyde}{body height in cm}
+#'   \item{gender}{Gender (one of male or female)}
+#'   \item{year}{year}
+#'   \item{height}{body height in cm}
 #' }
 "studentHeights"
 
@@ -56,39 +56,36 @@
 
 #' Prices of apartments in 2013, Trondheim, Norway.
 #'
-#' Datasettet inneholder informasjon om 95 leiligheter som var til salgs i foerste halvdel av 2013 i Trondheim.
-#' Denne informasjonen omfatter pris, stoerrelse, beliggenhet, byggeaar og miljoemerking angaaende leilighetene.
+#' The dataset contains information about 95 apartments that were sold in the first part of 2013 in Trondheim, Norway.
+#'
 #'
 #'
 #' @format A data frame with 95 rows and 6 variables:
 #' \describe{
-#'   \item{pris}{price in NOK}
-#'   \item{pris2}{??}
-#'   \item{beliggenhet}{location coded as 1,2,3 or 4 (1=centrum, 2=south, 3=west, 4=east)}
-#'   \item{stoerrelse}{size of appartment (sqm)}
-#'   \item{byggeaar}{year when built}
-#'   \item{miljoemerking}{environmental score (1,2 or 3)}
+#'   \item{price}{price in NOK}
+#'   \item{location}{location coded as 1,2,3 or 4 (1=centrum, 2=south, 3=west, 4=east)}
+#'   \item{size}{size of appartment (sqm)}
+#'   \item{year}{year when built}
+#'   \item{envscore}{environmental score (1,2 or 3)}
 #' }
 #' @source
-"leilighet"
+"flats"
 
 #' Price of birthday presents.
 #'
-#' Datasettet inneholder 20 observasjoner og 4 variabler. Den foerste variabelen er `gave_verdi` som representerer
-#' antall kroner en brukte paa en bursdagsgave til partneren sin sist. De andre to variablene heter `attraktiv`og
-#' `snill` som henholdsvis maaler hvor attraktiv og snill en vurderer sin partner paa en skala 1 til 7.
-#' Til slutt, har vi variabelen `alder` som viser respondentens alder.
+#' The dataset comprises 20 observations of 4 variables describing the value of
+#' birthday presents respondents offered their partners for their latest birthday.
 #'
 #'
 #' @format A data frame with 20 rows and 4 variables:
 #' \describe{
-#'   \item{gave_verdi}{price in NOK}
-#'   \item{attraktiv}{score for how attractive the partner was judged to be (1-7)}
-#'   \item{snill}{score for how kind the partner was judged to be (1-7)}
-#'   \item{alder}{age in years}
+#'   \item{value}{price in NOK}
+#'   \item{attractiveness}{score for how attractive the partner was judged to be (1-7)}
+#'   \item{kindness}{score for how kind the partner was judged to be (1-7)}
+#'   \item{age}{age in years}
 #' }
 #' @source
-"gave"
+"gifts"
 
 #' Number of deaths in Norway by age in single-year bins.
 #'
@@ -99,11 +96,11 @@
 #'
 #' @format A data frame with 106 rows and 2 variables:
 #' \describe{
-#'   \item{alder}{age numeric in years}
-#'   \item{doede}{antall deaths in Norway in 2017}
+#'   \item{age}{age numeric in years}
+#'   \item{deaths}{number of deaths in Norway in 2017}
 #' }
 #' @source \url{https://www.ssb.no/}
-"doede"
+"deaths"
 
 
 #' Basic bio data on athletes and medal results from Summer Games in Rio 2016.
@@ -159,21 +156,21 @@
 #' @format A character vector
 #' \describe{
 #' }
-"rnorsk.all.used.packages"
+"astatur.all.used.packages"
 
 #' Data from a survey in a fitness center in Trondheim.
 #'
 #' @format A data frame with 210 rows and 6 variables:
 #' @source
 #' \describe{
-#' \item{ttimer}{self-reported number of hours with training per week}
-#' \item{kjoenn}{sex (0=female, 1=male)}
-#' \item{alder}{age in years}
-#' \item{utdann}{education (1=secondary/high, 2=university, 3=more than university)}
-#' \item{sivsta}{civil status (0=married, 1=unmarried)}
-#' \item{helse}{self-reported importance of health (0=Not important at all - 6=Very important)}
+#' \item{training_hours}{self-reported number of hours with training per week}
+#' \item{gender}{sex (0=female, 1=male)}
+#' \item{age}{age in years}
+#' \item{education}{education (1=secondary/high, 2=university, 3=more than university)}
+#' \item{civil_status}{civil status (0=married, 1=unmarried)}
+#' \item{health}{self-reported importance of health (0=Not important at all - 6=Very important)}
 #' }
-"trening"
+"training"
 
 #' Data from 6 Questions from a survey in a fitness center in Trondheim (2014).
 #' Questions were of the form "I am training ..."
@@ -188,4 +185,4 @@
 #' \item{Var5}{to improve my appearance (1=not important at all - 6=very important)}
 #' \item{Var6}{to look more attractive (1=not important at all - 6=very important)}
 #' }
-"trening3"
+"training2"
