@@ -4,7 +4,7 @@
 
 # astatur <img src="man/figures/logo.png" align="right" alt="" width="120" />
 
-[Homepage](https://ihrke.github.io/rnorsk/)
+[Homepage](https://ihrke.github.io/astatur/)
 
 This packages is the companion package to our book "Applied Statistics using R".
 
