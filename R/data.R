@@ -186,3 +186,28 @@
 #' \item{Var6}{to look more attractive (1=not important at all - 6=very important)}
 #' }
 "training2"
+
+
+#' Data from a web-based intervention study for depression.
+#'
+#' Høifødt, R. S., Mittner, M., Lillevoll, K., Katla, S. K., Kolstrup, N.,
+#' Eisemann, M., & Friborg, O. (2015). Predictors of response to Web-based
+#' cognitive behavioral therapy with high-intensity face-to-face therapist
+#' guidance for depression: a Bayesian analysis. Journal of medical
+#' Internet research, 17(9), e197.
+#'
+#' @format A data frame with 554 rows and 10 variables:
+#' @source
+#' \describe{
+#' \item{ID}{ID for individual patients}
+#' \item{female}{0=male, 1=female}
+#' \item{age}{in years}
+#' \item{married}{0=not married, 1=married}
+#' \item{job}{0=does not have job, 1=has job}
+#' \item{AUDIT}{Alcohol Use Disorders Identification Test}
+#' \item{motivation}{self-reported motivation to complete the web-based therapy (0-100)}
+#' \item{session}{session number}
+#' \item{week}{in which week from start of study the session took place}
+#' \item{BDI}{Becks depression inventory}
+#' }
+"depression"
