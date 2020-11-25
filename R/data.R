@@ -212,6 +212,27 @@
 #' }
 "depression"
 
+#' Data from a web-based intervention study for depression converted into
+#' wide-format from the dataset `depression`.
+#'
+#' @format A data frame with 554 rows and 10 variables:
+#' @source
+#' \describe{
+#' \item{ID}{ID for individual patients}
+#' \item{female}{0=male, 1=female}
+#' \item{age}{in years}
+#' \item{married}{0=not married, 1=married}
+#' \item{job}{0=does not have job, 1=has job}
+#' \item{AUDIT}{Alcohol Use Disorders Identification Test}
+#' \item{motivation}{self-reported motivation to complete the web-based therapy (0-100)}
+#' \item{session}{session number}
+#' \item{week1}{in which week from start of study the session took place}
+#' \item{week2}{in which week from start of study the session took place and so on}
+#' \item{BDI1}{Becks depression inventory in session 1}
+#' \item{BDI2}{BDI in session 2 (and so on)}
+#' }
+"depression.wide"
+
 
 #' Contains information on persons undergoing one of three different kinds of diets.
 #' https://www.sheffield.ac.uk/polopoly_fs/1.536445!/file/MASH_ANOVA_in_R.pdf
