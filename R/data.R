@@ -211,3 +211,19 @@
 #' \item{BDI}{Becks depression inventory}
 #' }
 "depression"
+
+
+#' Contains information on persons undergoing one of three different kinds of diets.
+#' https://www.sheffield.ac.uk/polopoly_fs/1.536445!/file/MASH_ANOVA_in_R.pdf
+#'
+#' @format A data frame with 76 rows and 6 variables:
+#' @source
+#' \describe{
+#' \item{person}{ID for individual participants}
+#' \item{gender}{0=female, 1=male}
+#' \item{age}{in years}
+#' \item{diet}{diet 1-3}
+#' \item{pre.weight}{bodyweight before the diet}
+#' \item{post.weight}{bodyweight after the diet}
+#' }
+"diet"
