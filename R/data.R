@@ -163,14 +163,34 @@
 #' @format A data frame with 210 rows and 6 variables:
 #' @source
 #' \describe{
-#' \item{training_hours}{self-reported number of hours with training per week}
+#' \item{whours}{self-reported number of hours with training per week}
 #' \item{gender}{sex (0=female, 1=male)}
 #' \item{age}{age in years}
-#' \item{education}{education (1=secondary/high, 2=university, 3=more than university)}
-#' \item{civil_status}{civil status (0=married, 1=unmarried)}
+#' \item{educ}{education (1=secondary/high, 2=university, 3=more than university)}
+#' \item{marital}{marital status (0=married, 1=unmarried)}
 #' \item{health}{self-reported importance of health (0=Not important at all - 6=Very important)}
 #' }
-"training"
+"workout"
+
+#' Data from a survey in a fitness center in Trondheim.
+#' Questions were of the form "How important is it to workout ..."
+#'
+#' @format A data frame with 246 rows and 11 variables:
+#' @source
+#' \describe{
+#' \item{lweight}{to loose weight (1=not important at all - 6=very important)}
+#' \item{calories}{to burn calories (1=not important at all - 6=very important)}
+#' \item{cweight}{to control my weight (1=not important at all - 6=very important)}
+#' \item{body}{to have a good body (1=not important at all - 6=very important)}
+#' \item{appear}{to improve my appearance (1=not important at all - 6=very important)}
+#' \item{attract}{to look more attractive (1=not important at all - 6=very important)}
+#' \item{muscle}{to develop my muscles (1=not important at all - 6=very important)}
+#' \item{strength}{to get stronger (1=not important at all - 6=very important)}
+#' \item{endur}{to increase my endurance (1=not important at all - 6=very important)}
+#' \item{face}{How well does the following describe you as a person -  attractive face (1=not important at all - 6=very important)}
+#' \item{sexy}{How well does the following describe you as a person - sexy (1=not important at all - 6=very important)}
+#'
+"workout2"
 
 #' Data from 6 Questions from a survey in a fitness center in Trondheim (2014).
 #' Questions were of the form "I am training ..."
@@ -185,7 +205,7 @@
 #' \item{Var5}{to improve my appearance (1=not important at all - 6=very important)}
 #' \item{Var6}{to look more attractive (1=not important at all - 6=very important)}
 #' }
-"training2"
+"workout3"
 
 
 #' Data from a web-based intervention study for depression.
@@ -248,7 +268,6 @@
 #' \item{post.weight}{bodyweight after the diet}
 #' }
 "diet"
-
 
 #' The data was obtained from a survey of 1004 Norwegian
 #' individuals. In this survey, the respondents were asked
