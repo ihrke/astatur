@@ -248,3 +248,23 @@
 #' \item{post.weight}{bodyweight after the diet}
 #' }
 "diet"
+
+
+#' The data was obtained from a survey of 1004 Norwegian
+#' individuals. In this survey, the respondents were asked
+#' to indicate (on an ordinal scale from 1 = not at all
+#' important, to 5 = very important) how important each
+#' of five personal values was as a guiding
+#' principle in their lives.
+#'
+#'
+#' @format A data frame with 1004 rows and 5 variables:
+#' @source
+#' \describe{
+#' \item{respected}{being well respected by others}
+#' \item{secure}{having a sense of security}
+#' \item{accomplish}{having a sense of accomplishment}
+#' \item{self_fulfil}{self-fulfillment}
+#' \item{self_respect}{self-respect}
+#' }
+"values"
