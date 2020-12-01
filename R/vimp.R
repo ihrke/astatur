@@ -19,14 +19,18 @@ vimp <- function(regmod){
  coefdataf$predictor <- rownames(coefdataf)
  rownames(coefdataf) <- NULL
  colnames(coefdataf) <- c("std.coefs", "predictor")
+ labs <- arrange(mutate(coefdataf, abs.std.coefs=abs(std.coefs)), desc(abs.std.coefs))$predictor
+ coefdataf$predictor=ordered(coefdataf$predictor, levels=labs)
  library(ggplot2)
  ggplot(coefdataf, aes(x=predictor, y=abs(std.coefs), fill=predictor)) +
   geom_bar(stat = "identity") +
   geom_text(aes(label=std.coefs), vjust=0) +
   geom_hline(yintercept=c(0.1,0.2,0)) +
   scale_y_continuous(breaks = seq(0,1,by=0.1)) +
-  geom_hline(aes(yintercept= 0.1, linetype = "<0.1, small effect"), colour= 'red') +
-  geom_hline(aes(yintercept= 0.2, linetype = ">0.2, large effect"), colour= 'blue') +
-  scale_linetype_manual(name = "limit", values = c(1,1),
+  geom_hline(aes(yintercept= 0.1, linetype = "<0.1, small"), colour= 'red') +
+  geom_hline(aes(yintercept= 0.2, linetype = ">0.2, large"), colour= 'blue') +
+  guides(fill=F)+
+  scale_linetype_manual(name = "effect-size", values = c(1,1),
                         guide = guide_legend(override.aes = list(color = c("red", "blue"))))
 }
+
