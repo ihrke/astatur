@@ -79,13 +79,13 @@
 #'
 #' @format A data frame with 20 rows and 4 variables:
 #' \describe{
-#'   \item{value}{price in NOK}
-#'   \item{attractiveness}{score for how attractive the partner was judged to be (1-7)}
-#'   \item{kindness}{score for how kind the partner was judged to be (1-7)}
-#'   \item{age}{age in years}
+#'   \item{Present_Value}{price in NOK}
+#'   \item{Attractiveness}{score for how attractive the partner was judged to be (1-7)}
+#'   \item{Kindness}{score for how kind the partner was judged to be (1-7)}
+#'   \item{Age}{age in years}
 #' }
 #' @source
-"gifts"
+"present"
 
 #' Number of deaths in Norway by age in single-year bins.
 #'
