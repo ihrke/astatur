@@ -3,6 +3,7 @@
 S3method(print,regression.diagnostics)
 export(condisc)
 export(regression.diagnostics)
+export(relicoef)
 export(theme_astatur)
 export(theme_spss)
 export(vimp)

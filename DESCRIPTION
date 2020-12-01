@@ -21,6 +21,7 @@ Imports:
     tidyverse,
     car,
     lmtest,
-    crayon
+    crayon,
+    lavaan
 URL: https://github.com/ihrke/astatur
 BugReports: https://github.com/ihrke/astatur/issues
