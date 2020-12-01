@@ -62,14 +62,15 @@
 #'
 #' @format A data frame with 95 rows and 6 variables:
 #' \describe{
-#'   \item{price}{price in NOK}
+#'   \item{flat_price}{price in USD}
 #'   \item{location}{location coded as 1,2,3 or 4 (1=centrum, 2=south, 3=west, 4=east)}
-#'   \item{size}{size of appartment (sqm)}
-#'   \item{year}{year when built}
-#'   \item{envscore}{environmental score (1,2 or 3)}
+#'   \item{floor_size}{size of appartment (sqm)}
+#'   \item{year_built}{year when built}
+#'   \item{energy_efficiency}{environmental score (1,2 or 3)}
 #' }
 #' @source
 "flats"
+
 
 #' Price of birthday presents.
 #'
