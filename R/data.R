@@ -246,7 +246,6 @@
 #' \item{job}{0=does not have job, 1=has job}
 #' \item{AUDIT}{Alcohol Use Disorders Identification Test}
 #' \item{motivation}{self-reported motivation to complete the web-based therapy (0-100)}
-#' \item{session}{session number}
 #' \item{week1}{in which week from start of study the session took place}
 #' \item{week2}{in which week from start of study the session took place and so on}
 #' \item{BDI1}{Becks depression inventory in session 1}
