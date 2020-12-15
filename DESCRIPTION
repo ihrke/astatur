@@ -22,6 +22,10 @@ Imports:
     car,
     lmtest,
     crayon,
-    lavaan
+    lavaan,
+    semPlot,
+    simstandard,
+    stringr,
+    rtf
 URL: https://github.com/ihrke/astatur
 BugReports: https://github.com/ihrke/astatur/issues
