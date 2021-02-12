@@ -15,6 +15,7 @@
 #' relicoef(est.model.01)
 #'
 #' @export
+#'
 relicoef <- function(mod){
   latvarname <- lavNames(mod, type="lv")
   obsvarname <- lavNames(mod, type="ov")
@@ -33,11 +34,17 @@ relicoef <- function(mod){
     ix=parest$lhs %in% ovars & parest$rhs==parest$lhs
     ll[[lvar]]=sum(parest[ix,]$est)
 
-    ix=parest$lhs %in% ovars & parest$rhs %in% ovars & parest$lhs!=parest$rhs
+    ix=parest$lhs %in% ovars & parest$rhs %in% obsvarname & parest$lhs!=parest$rhs
     ll2[[lvar]]=sum(parest[ix,]$est)
   }
   errvar=unlist(ll)
   corrErr=unlist(ll2)
+
+  # ensure that terms are in same order
+  sumlambdasq <- sumlambdasq[latvarname]
+  factorvar <- factorvar[latvarname]
+  errvar <- errvar[latvarname]
+  corrErr <- corrErr[latvarname]
 
   RRC=(sumlambdasq*factorvar)/(sumlambdasq*factorvar+errvar+2*corrErr)
   data.frame(
@@ -45,3 +52,19 @@ relicoef <- function(mod){
     RRC=as.vector(RRC)
   )
 }
+
+### problematic example
+##
+#
+#meas.lpa.mod2 <- '
+#                Attractive =~ face + sexy
+#                Appearance =~ body + appear + attract
+#                Muscle =~ muscle + strength + endur
+#                Weight =~ lweight + calories + cweight
+#                muscle ~~ endur
+#                lweight ~~ body
+#                '
+#est.meas.lpa.mod2 <- cfa(meas.lpa.mod2, data=workout2)
+#relicoef(est.meas.lpa.mod2)
+#semTools::reliability(est.meas.lpa.mod2)
+
