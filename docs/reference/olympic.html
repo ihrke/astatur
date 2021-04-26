@@ -40,6 +40,7 @@
 
 
 <meta property="og:title" content="Basic bio data on athletes and medal results from Summer Games in Rio 2016. — olympic" />
+<meta property="og:description" content="Basic bio data on athletes and medal results from Summer Games in Rio 2016." />
 
 
 
@@ -113,8 +114,10 @@
     </div>
 
     <div class="ref-description">
+    <p>Basic bio data on athletes and medal results from Summer Games in Rio 2016.</p>
     </div>
 
+    <pre class="usage"><span class='va'>olympic</span></pre>
 
 
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
@@ -123,26 +126,50 @@
 <dt>ID</dt><dd><p>Unique number for each athlete</p></dd>
 <dt>Name</dt><dd><p>Athlete's name</p></dd>
 <dt>Sex</dt><dd><p>M or F</p></dd>
-<dt>AgeInteger in years
-HeightIn centimeters
-WeightIn kilograms
-TeamTeam name
-NOCNational Olympic Committee 3-letter code
-GamesYear and season
-SportSport
-EventEvent
-MedalGold, Silver, Bronze, or NA
-</dt><dd><p></p></dd>
-</dl><p><a href='https://www.kaggle.com/heesoo37/olympic-history-data-a-thorough-analysis/data'>https://www.kaggle.com/heesoo37/olympic-history-data-a-thorough-analysis/data</a>
+<dt>Age</dt><dd><p>Integer in years</p></dd>
+<dt>Height</dt><dd><p>In centimeters</p></dd>
+<dt>Weight</dt><dd><p>In kilograms</p></dd>
+<dt>Team</dt><dd><p>Team name</p></dd>
+<dt>NOC</dt><dd><p>National Olympic Committee 3-letter code</p></dd>
+<dt>Games</dt><dd><p>Year and season</p></dd>
+<dt>Sport</dt><dd><p>Sport</p></dd>
+<dt>Event</dt><dd><p>Event</p></dd>
+<dt>Medal</dt><dd><p>Gold, Silver, Bronze, or NA</p></dd>
 
+</dl>
 
-olympic
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
+    <p><a href='https://www.kaggle.com/heesoo37/olympic-history-data-a-thorough-analysis/data'>https://www.kaggle.com/heesoo37/olympic-history-data-a-thorough-analysis/data</a></p>
 
-Basic bio data on athletes and medal results from Summer Games in Rio 2016.
-
-datasets</p>
-
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/graphics/plot.default.html'>plot</a></span><span class='op'>(</span><span class='fu'>dplyr</span><span class='fu'>::</span><span class='fu'><a href='https://dplyr.tidyverse.org/reference/sample_n.html'>sample_frac</a></span><span class='op'>(</span><span class='va'>olympic</span>, <span class='fl'>0.05</span><span class='op'>)</span><span class='op'>)</span>
+</div><div class='img'><img src='olympic-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='fu'><a href='https://rdrr.io/r/base/summary.html'>summary</a></span><span class='op'>(</span><span class='va'>olympic</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;       ID                Name           Sex           Age            Height   
+#&gt;  Length:13688       Length:13688       M:7465   Min.   :13.00   Min.   :133  
+#&gt;  Class :character   Class :character   F:6223   1st Qu.:22.00   1st Qu.:168  
+#&gt;  Mode  :character   Mode  :character            Median :26.00   Median :175  
+#&gt;                                                 Mean   :26.21   Mean   :176  
+#&gt;                                                 3rd Qu.:29.00   3rd Qu.:184  
+#&gt;                                                 Max.   :62.00   Max.   :218  
+#&gt;                                                                 NA's   :176  
+#&gt;      Weight           Team               NOC               Games          
+#&gt;  Min.   : 30.00   Length:13688       Length:13688       Length:13688      
+#&gt;  1st Qu.: 60.00   Class :character   Class :character   Class :character  
+#&gt;  Median : 69.00   Mode  :character   Mode  :character   Mode  :character  
+#&gt;  Mean   : 70.99                                                           
+#&gt;  3rd Qu.: 80.00                                                           
+#&gt;  Max.   :170.00                                                           
+#&gt;  NA's   :223                                                              
+#&gt;     Sport              Event              Medal      
+#&gt;  Length:13688       Length:13688       Gold  :  665  
+#&gt;  Class :character   Class :character   Silver:  655  
+#&gt;  Mode  :character   Mode  :character   Bronze:  703  
+#&gt;                                        NA's  :11665  
+#&gt;                                                      
+#&gt;                                                      
+#&gt;                                                      </div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">

@@ -19,6 +19,7 @@ vimp <- function(regmod){
  coefdataf$predictor <- rownames(coefdataf)
  rownames(coefdataf) <- NULL
  colnames(coefdataf) <- c("std.coefs", "predictor")
+ library(dplyr)
  labs <- arrange(mutate(coefdataf, abs.std.coefs=abs(std.coefs)), desc(abs.std.coefs))$predictor
  coefdataf$predictor=ordered(coefdataf$predictor, levels=labs)
  library(ggplot2)

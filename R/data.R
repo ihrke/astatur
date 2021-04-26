@@ -113,7 +113,7 @@
 #' \item{ID}{Unique number for each athlete}
 #' \item{Name}{Athlete's name}
 #' \item{Sex}{M or F}
-#' \item{Age{Integer in years}
+#' \item{Age}{Integer in years}
 #' \item{Height}{In centimeters}
 #' \item{Weight}{In kilograms}
 #' \item{Team}{Team name}
@@ -123,7 +123,14 @@
 #' \item{Event}{Event}
 #' \item{Medal}{Gold, Silver, Bronze, or NA}
 #' }
+#'
+#'
 #' @source \url{https://www.kaggle.com/heesoo37/olympic-history-data-a-thorough-analysis/data}
+#'
+#' @examples
+#' plot(dplyr::sample_frac(olympic, 0.05))
+#' summary(olympic)
+#'
 "olympic"
 
 
