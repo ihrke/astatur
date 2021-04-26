@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Theme that looks a bit like SPSS. — theme_spss • astatur</title>
+<title>Weight versus age of chicks on different diets — ChickWeight • astatur</title>
 
 
 <!-- jquery -->
@@ -39,10 +39,9 @@
 
 
 
-<meta property="og:title" content="Theme that looks a bit like SPSS. — theme_spss" />
-<meta property="og:description" content="Credits to Matti Vuorre:
-https://twitter.com/vuorre/status/700867902463868928
-https://gist.githubusercontent.com/mvuorre/bb1e3e412cfa88590f97/raw/a2fe56c2b1d07ebde29af0cf7cd071dc329840c5/theme_spss.R" />
+<meta property="og:title" content="Weight versus age of chicks on different diets — ChickWeight" />
+<meta property="og:description" content="The ChickWeight data frame has 578 rows and 4 columns from an
+  experiment on the effect of diet on early growth of chicks." />
 
 
 
@@ -110,32 +109,64 @@ https://gist.githubusercontent.com/mvuorre/bb1e3e412cfa88590f97/raw/a2fe56c2b1d0
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Theme that looks a bit like SPSS.</h1>
-    <small class="dont-index">Source: <a href='https://github.com/ihrke/astatur/blob/master/R/ggplot_themes.R'><code>R/ggplot_themes.R</code></a></small>
-    <div class="hidden name"><code>theme_spss.Rd</code></div>
+    <h1>Weight versus age of chicks on different diets</h1>
+    
+    <div class="hidden name"><code>ChickWeight.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Credits to Matti Vuorre:
-https://twitter.com/vuorre/status/700867902463868928
-https://gist.githubusercontent.com/mvuorre/bb1e3e412cfa88590f97/raw/a2fe56c2b1d07ebde29af0cf7cd071dc329840c5/theme_spss.R</p>
+    <p>The <code>ChickWeight</code> data frame has 578 rows and 4 columns from an
+  experiment on the effect of diet on early growth of chicks.</p>
     </div>
 
-    <pre class="usage"><span class='fu'>theme_spss</span><span class='op'>(</span>base_family <span class='op'>=</span> <span class='st'>"Helvetica"</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='va'>ChickWeight</span></pre>
 
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>base_family</th>
-      <td><p>Font family used</p></td>
-    </tr>
-    </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
-    <p>A ggplot-theme that can be added to ggplot-objects.</p>
+    <p>An object of class
+  <code><a href='https://rdrr.io/r/base/c.html'>c("nfnGroupedData", "nfGroupedData", "groupedData", "data.frame")</a></code>
+  containing the following columns:</p><dl>
+    <dt>weight</dt><dd><p>a numeric vector giving the body weight of the chick (gm).</p></dd>
+    <dt>Time</dt><dd><p>a numeric vector giving the number of days since birth when
+      the measurement was made.</p></dd>
+    <dt>Chick</dt><dd><p>an ordered factor with levels
+      <code>18</code> &lt; ... &lt; <code>48</code>
+      giving a unique identifier for the chick.  The ordering of
+      the levels groups chicks on the same diet together and
+      orders them according to their final weight (lightest to
+      heaviest) within diet.</p></dd>
+    <dt>Diet</dt><dd><p>a factor with levels 1, ..., 4 indicating which
+      experimental diet the chick received.</p></dd>
+  
+</dl>
 
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>The body weights of the chicks were measured at birth and every
+  second day thereafter until day 20.  They were also measured on day
+  21.  There were four groups on chicks on different protein diets.</p>
+<p>This dataset was originally part of package <code>nlme</code>, and that has
+  methods (including for <code><a href='https://rdrr.io/r/base/Extract.html'>[</a></code>, <code>as.data.frame</code>, <code>plot</code> and
+  <code>print</code>) for its grouped-data classes.</p>
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+
+    <p>Crowder, M. and Hand, D. (1990), <em>Analysis of Repeated Measures</em>,
+  Chapman and Hall (example 5.3)</p>
+<p>Hand, D. and Crowder, M. (1996), <em>Practical Longitudinal Data
+    Analysis</em>, Chapman and Hall (table A.2)</p>
+<p>Pinheiro, J. C. and Bates, D. M. (2000) <em>Mixed-effects Models in
+    S and S-PLUS</em>, Springer.</p>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
+
+    <div class='dont-index'><p><code><a href='https://rdrr.io/r/stats/SSlogis.html'>SSlogis</a></code> for models fitted to this dataset.</p></div>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='co'># \donttest{</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>require</a></span><span class='op'>(</span><span class='va'>graphics</span><span class='op'>)</span>
+<span class='fu'><a href='https://rdrr.io/r/graphics/coplot.html'>coplot</a></span><span class='op'>(</span><span class='va'>weight</span> <span class='op'>~</span> <span class='va'>Time</span> <span class='op'>|</span> <span class='va'>Chick</span>, data <span class='op'>=</span> <span class='va'>ChickWeight</span>,
+       type <span class='op'>=</span> <span class='st'>"b"</span>, show.given <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+</div><div class='img'><img src='ChickWeight-1.png' alt='' width='700' height='433' /></div><div class='input'><span class='co'># }</span></div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
