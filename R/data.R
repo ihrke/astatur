@@ -15,7 +15,7 @@
 #' @source \url{https://www.ssb.no/}
 "newStudents"
 
-#' Body-height in cm collected from a statistics course at a norwegian university
+#' Body-height in cm collected from a statistics course at a Norwegian university
 #' across three years.
 #'
 #' A dataset containing individual body heights along with a variable for gender and year

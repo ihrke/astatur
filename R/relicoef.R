@@ -7,6 +7,7 @@
 #' for factors with and without correlated errors.
 #'
 #' @examples
+#' library(lavaan)
 #' model.01 <- '
 #'            Col =~ respected + secure
 #'            Ind =~ accomplish + self_fulfil + self_respect
