@@ -21,6 +21,8 @@
 <![endif]-->
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -33,25 +35,19 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">astatur</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.0</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="reference/index.html">Reference</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/ihrke/astatur/">
+  <a href="https://github.com/ihrke/astatur/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
      
   </a>
@@ -70,81 +66,80 @@
   <div class="contents col-md-9">
 
 
-<div id="astatur-" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#astatur-" class="anchor"></a>astatur <img src="reference/figures/logo.png" align="right" alt="" width="120">
+<div class="section level1">
+<div class="page-header"><h1 id="astatur-">astatur <img src="reference/figures/logo.png" align="right" alt="" width="120"><a class="anchor" aria-label="anchor" href="#astatur-"></a>
 </h1></div>
-<p><a href="https://ihrke.github.io/astatur/">Homepage</a></p>
+<p><a href="https://ihrke.github.io/astatur/" class="external-link">Homepage</a></p>
 <p>This packages is the companion package to our book “Applied Statistics using R”.</p>
 <p>All datasets and code-examples used in the book are included in this package. In addition, the package contains several convenience functions that are used in the book.</p>
-<div id="installation" class="section level2">
-<h2 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h2>
+<div class="section level2">
+<h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h2>
 <p>You can install the package from github using</p>
-<div class="sourceCode" id="cb1"><pre class="downlit">
-<span class="co">#install.packages("devtools")</span>
-<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org//reference/remote-reexports.html">install_github</a></span><span class="op">(</span><span class="st">"ihrke/astatur"</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co">#install.packages("devtools")</span>
+<span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"ihrke/astatur"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="usage" class="section level2">
-<h2 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h2>
+<div class="section level2">
+<h2 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h2>
 <p>In order to run the example codes from the book, you can use the following to install all packages used in the book.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit">
-<span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ihrke/astatur">astatur</a></span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="va">astatur.all.used.packages</span><span class="op">)</span></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/ihrke/astatur" class="external-link">astatur</a></span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="va">astatur.all.used.packages</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="code-examples" class="section level2">
-<h2 class="hasAnchor">
-<a href="#code-examples" class="anchor"></a>Code-examples</h2>
-<p>All code-examples presented in the book are included in this package. The list of files can be <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples">accessed here</a> or by clicking on the filenames below:</p>
+<div class="section level2">
+<h2 id="code-examples">Code-examples<a class="anchor" aria-label="anchor" href="#code-examples"></a>
+</h2>
+<p>All code-examples presented in the book are included in this package. The list of files can be <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples" class="external-link">accessed here</a> or by clicking on the filenames below:</p>
 <ul>
 <li>
-<strong>Chapter 0</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_00-Preface.R"><code>chapter_00-Preface.R</code></a>
+<strong>Chapter 0</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_00-Preface.R" class="external-link"><code>chapter_00-Preface.R</code></a>
 </li>
 <li>
-<strong>Chapter 1</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_01-IntroR.R"><code>chapter_01-IntroR.R</code></a>
+<strong>Chapter 1</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_01-IntroR.R" class="external-link"><code>chapter_01-IntroR.R</code></a>
 </li>
 <li>
-<strong>Chapter 2</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_02-ImportWorkWithR.R"><code>chapter_02-ImportWorkWithR.R</code></a>
+<strong>Chapter 2</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_02-ImportWorkWithR.R" class="external-link"><code>chapter_02-ImportWorkWithR.R</code></a>
 </li>
 <li>
-<strong>Chapter 3</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_03-HowDoesRWork.R"><code>chapter_03-HowDoesRWork.R</code></a>
+<strong>Chapter 3</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_03-HowDoesRWork.R" class="external-link"><code>chapter_03-HowDoesRWork.R</code></a>
 </li>
 <li>
-<strong>Chapter 4</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_04-DataManagement.R"><code>chapter_04-DataManagement.R</code></a>
+<strong>Chapter 4</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_04-DataManagement.R" class="external-link"><code>chapter_04-DataManagement.R</code></a>
 </li>
 <li>
-<strong>Chapter 5</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_05-VisualisationR.R"><code>chapter_05-VisualisationR.R</code></a>
+<strong>Chapter 5</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_05-VisualisationR.R" class="external-link"><code>chapter_05-VisualisationR.R</code></a>
 </li>
 <li>
-<strong>Chapter 6</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_06-DescriptiveStat.R"><code>chapter_06-DescriptiveStat.R</code></a>
+<strong>Chapter 6</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_06-DescriptiveStat.R" class="external-link"><code>chapter_06-DescriptiveStat.R</code></a>
 </li>
 <li>
-<strong>Chapter 7</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_07-SimpleRegression.R"><code>chapter_07-SimpleRegression.R</code></a>
+<strong>Chapter 7</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_07-SimpleRegression.R" class="external-link"><code>chapter_07-SimpleRegression.R</code></a>
 </li>
 <li>
-<strong>Chapter 8</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_08-MultipleRegression.R"><code>chapter_08-MultipleRegression.R</code></a>
+<strong>Chapter 8</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_08-MultipleRegression.R" class="external-link"><code>chapter_08-MultipleRegression.R</code></a>
 </li>
 <li>
-<strong>Chapter 9</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_09-DummyRegression.R"><code>chapter_09-DummyRegression.R</code></a>
+<strong>Chapter 9</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_09-DummyRegression.R" class="external-link"><code>chapter_09-DummyRegression.R</code></a>
 </li>
 <li>
-<strong>Chapter 10</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_10-InteractionRegression.R"><code>chapter_10-InteractionRegression.R</code></a>
+<strong>Chapter 10</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_10-InteractionRegression.R" class="external-link"><code>chapter_10-InteractionRegression.R</code></a>
 </li>
 <li>
-<strong>Chapter 11</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_11-LogisticRegression.R"><code>chapter_11-LogisticRegression.R</code></a>
+<strong>Chapter 11</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_11-LogisticRegression.R" class="external-link"><code>chapter_11-LogisticRegression.R</code></a>
 </li>
 <li>
-<strong>Chapter 12</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_12-MultilevelLong.R"><code>chapter_12-MultilevelLong.R</code></a>
+<strong>Chapter 12</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_12-MultilevelLong.R" class="external-link"><code>chapter_12-MultilevelLong.R</code></a>
 </li>
 <li>
-<strong>Chapter 13</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_13-FactorAnalysis.R"><code>chapter_13-FactorAnalysis.R</code></a>
+<strong>Chapter 13</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_13-FactorAnalysis.R" class="external-link"><code>chapter_13-FactorAnalysis.R</code></a>
 </li>
 <li>
-<strong>Chapter 14</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_14-StructuralEq.R"><code>chapter_14-StructuralEq.R</code></a>
+<strong>Chapter 14</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_14-StructuralEq.R" class="external-link"><code>chapter_14-StructuralEq.R</code></a>
 </li>
 <li>
-<strong>Chapter 15</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_15-BayesianStats.R"><code>chapter_15-BayesianStats.R</code></a>
+<strong>Chapter 15</strong>: <a href="https://github.com/ihrke/astatur/tree/master/inst/code_examples/chapter_15-BayesianStats.R" class="external-link"><code>chapter_15-BayesianStats.R</code></a>
 </li>
 </ul>
 </div>
@@ -154,51 +149,56 @@
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/ihrke/astatur/">https://​github.com/​ihrke/​astatur/​</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/ihrke/astatur/issues">https://​github.com/​ihrke/​astatur/​issues</a>
-</li>
-</ul>
-</div>
-<div class="license">
-<h2>License</h2>
-<ul class="list-unstyled">
-<li><a href="LICENSE.html">Full license</a></li>
-<li><small><a href="https://opensource.org/licenses/mit-license.php">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
-</ul>
-</div>
-<div class="citation">
-<h2>Citation</h2>
-<ul class="list-unstyled">
-<li><a href="authors.html">Citing astatur</a></li>
-</ul>
-</div>
-<div class="developers">
-<h2>Developers</h2>
-<ul class="list-unstyled">
-<li>Mittner Matthias <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-0205-7353" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
-<li>Mehmetoglu Mehmet <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-6092-8551" target="orcid.widget" aria-label="ORCID"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li><a href="https://github.com/ihrke/astatur/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/ihrke/astatur/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
-  <div class="dev-status">
-<h2>Dev status</h2>
+<div class="license">
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li><a href="https://www.tidyverse.org/lifecycle/#experimental"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small><a href="https://opensource.org/licenses/mit-license.php" class="external-link">MIT</a> + file <a href="LICENSE-text.html">LICENSE</a></small></li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing astatur</a></li>
+</ul>
 </div>
+
+<div class="developers">
+<h2 data-toc-skip>Developers</h2>
+<ul class="list-unstyled">
+<li>Mittner Matthias <br><small class="roles"> Author, maintainer </small> <a href="https://orcid.org/0000-0003-0205-7353" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+<li>Mehmetoglu Mehmet <br><small class="roles"> Author </small> <a href="https://orcid.org/0000-0002-6092-8551" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a> </li>
+</ul>
+</div>
+
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://www.tidyverse.org/lifecycle/#experimental" class="external-link"><img src="https://img.shields.io/badge/lifecycle-experimental-orange.svg" alt="Lifecycle: experimental"></a></li>
+</ul>
+</div>
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Mittner Matthias, Mehmetoglu Mehmet.</p>
+  <p></p>
+<p>Developed by Mittner Matthias, Mehmetoglu Mehmet.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -206,6 +206,8 @@
 
   
 
+
+  
 
   </body>
 </html>
