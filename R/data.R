@@ -68,7 +68,7 @@
 #'   \item{year_built}{year when built}
 #'   \item{energy_efficiency}{environmental score (1,2 or 3)}
 #' }
-#' @source
+#'
 "flats"
 
 
@@ -85,7 +85,7 @@
 #'   \item{Kindness}{score for how kind the partner was judged to be (1-7)}
 #'   \item{Age}{age in years}
 #' }
-#' @source
+#'
 "present"
 
 #' Number of deaths in Norway by age in single-year bins.

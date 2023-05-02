@@ -7,7 +7,7 @@
 #' @export
 #' @param base_family Font family used
 #' @return A ggplot-theme that can be added to ggplot-objects.
-#' @examples
+#'
 theme_spss <- function(base_family = "Helvetica") {
   ggplot2::theme(text = ggplot2::element_text(family = base_family, face = "bold"),
         axis.ticks = ggplot2::element_line(colour = "black", size = 1),
@@ -22,7 +22,7 @@ theme_spss <- function(base_family = "Helvetica") {
 #'
 #' @export
 #' @return A ggplot-theme that can be added to ggplot-objects.
-#' @examples
+#'
 theme_astatur <- function(...){
   ggplot2::theme_bw(...)
 }

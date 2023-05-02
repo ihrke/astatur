@@ -1,0 +1,50 @@
+---
+title: "Errata"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{errata}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+Even though we were trying to get everything right the first time, but small errors can (and do!) slip through the cracks. Here we keep an updated list of errors and mistakes that have been gracefully pointed out to us by attentive readers.
+
+### Problems in the text
+
+- Eq. 7.16: There is an error in Eq. 7.16: there should not be a subscript i on $\bar{Y}$. The error is in both the numerator and the denominator.
+- Figure 7.3: 
+  - This figure is, strictly speaking, not correct, and can be misleading. The distances shown are not TSS, ESS and RSS, but terms that - when squared and summed - contribute to these. 
+  - We have both found it useful for explaining the concept to our students. However, the current caption: the current “Visual representation of $R^2$” may be a little misleading and should read “Conceptual illustration of $R^2$” to emphasize the fact that it is a simplification for illustrative purposes.
+- In section 7.2.2 we write that “the square root of R is equivalent to the Pearson correlation between Y and X”. This is only true if r is positive. It would be better to say that $r^2 = R^2$, or that the square of r is equal to $R^2$.
+- Last sentence in section 7.2.2: $F$ should not be enclosed in parentheses.
+- Section 8.1, after Eq. 8.2 we write: The same interpretation applies to the coefficients ($\beta_2, \beta_3, ..., \beta_k$). The last beta in the parenthesis should have subscript K, not k.
+- Figure 8.1: There should not be a hat on the epsilon in the figure.
+- Section 12.4, after output of `anova(mod.linear,mod.quadratic, mod.cubic)` we write: "[...] but that the cubic model does not outperform the quadratic model, $\chi^2(1) = 0.27, p = 0.27$."
+  - The Chi-square value is wrong. It should be 1.21, not 0.27 (which is the p-value, printed twice).
+ 
+### Problems with code 
+ 
+- Section 10.2, towards the end there is a code segment that reads:
+
+```r
+library(dplyr)
+library(astatur)
+workout <- mutate(workout, healthage = health * age)
+```
+
+The mutate function may give an error (with recent versions of R and the `dplyr` package) that it cannot compute the product of health and age, since health is of type `haven_labelled`. The problem can be solved by applying the function `zap_formats()`:
+
+```r
+workout <- haven::zap_formats(workout)
+```
+
+### Acknowledgments
+
+Thanks to Dan Mønster (http://au.dk/en/danm@econ.au.dk) for thoroughly reading and commenting on the book!

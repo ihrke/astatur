@@ -111,20 +111,20 @@ The original version of the MSQ included 70 items. Intermediate analyses (done w
 
 Procedure. The data were collected over nine years, as part of a series of studies examining the effects of personality and situational factors on motivational state and subsequent cognitive performance. In each of 38 studies, prior to any manipulation of motivational state, participants signed a consent form and filled out the MSQ. (The procedures of the individual studies are irrelevant to this data set and could not affect the responses to the MSQ, since this instrument was completed before any further instructions or tasks).
 
-In addition to the MSQ, there are 5 scales from the Eysenck Personality Inventory. 
+In addition to the MSQ, there are 5 scales from the Eysenck Personality Inventory.
 
 }
-\source{Data collecte at the Personality, Motivation, and Cognition Laboratory, Northwestern University. 
+\source{Data collecte at the Personality, Motivation, and Cognition Laboratory, Northwestern University.
 }
 \references{
 
 William Revelle and Kristen Joan Anderson (1997) Personality, motivation and cognitive performance: Final report to the Army Research Institute on  contract MDA 903-93-K-0008
 
 Rafaeli, Eshkol and Revelle, William (2006), A premature consensus: Are happiness and sadness truly opposite affects? Motivation and Emotion, 30, 1, 1-12.
-}	
+}
 
 \examples{
 data(msq)
-describe(msq)
+summary(msq)
 }
 \keyword{datasets}

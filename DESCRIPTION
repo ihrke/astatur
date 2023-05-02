@@ -13,7 +13,7 @@ License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.3
 Imports: 
     httr,
     rjstat,
@@ -30,3 +30,7 @@ Imports:
     rtf
 URL: https://github.com/ihrke/astatur
 BugReports: https://github.com/ihrke/astatur/issues
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

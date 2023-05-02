@@ -25,6 +25,16 @@
       <ul class="nav navbar-nav"><li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu"><li>
+      <a href="../articles/errata.html">Errata</a>
+    </li>
+  </ul></li>
       </ul><ul class="nav navbar-nav navbar-right"><li>
   <a href="https://github.com/ihrke/astatur/" class="external-link">
     <span class="fab fa-github fa-lg"></span>
@@ -50,7 +60,7 @@
     </div>
 
     <div id="ref-usage">
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">msq</span><span class="op">)</span></code></pre></div>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">msq</span><span class="op">)</span></span></code></pre></div>
     </div>
 
     <div id="format">
@@ -357,9 +367,192 @@ The original version of the MSQ included 70 items. Intermediate analyses (done w
 
     <div id="ref-examples">
     <h2>Examples</h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">msq</span><span class="op">)</span></span>
-<span class="r-in"><span class="fu">describe</span><span class="op">(</span><span class="va">msq</span><span class="op">)</span></span>
-<span class="r-err co"><span class="r-pr">#&gt;</span> <span class="error">Error in describe(msq):</span> could not find function "describe"</span>
+    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="va">msq</span><span class="op">)</span></span></span>
+<span class="r-in"><span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">msq</span><span class="op">)</span></span></span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     MSQ_Time         active          afraid           alert      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   : 5.75   Min.   :0.000   Min.   :0.0000   Min.   :0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.: 9.30   1st Qu.:0.000   1st Qu.:0.0000   1st Qu.:0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :13.23   Median :1.000   Median :0.0000   Median :1.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :13.49   Mean   :1.028   Mean   :0.1157   Mean   :1.152  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:16.03   3rd Qu.:2.000   3rd Qu.:0.0000   3rd Qu.:2.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :22.75   Max.   :3.000   Max.   :3.0000   Max.   :3.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :1       NA's   :6       NA's   :5        NA's   :11     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      alone            angry           aroused        ashamed      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.0000   Min.   :0.00   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.00   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :0.0000   Median :0.0000   Median :0.00   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.5354   Mean   :0.2151   Mean   :0.71   Mean   :0.1199  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:1.0000   3rd Qu.:0.0000   3rd Qu.:1.00   3rd Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.0000   Max.   :3.0000   Max.   :3.00   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :2058     NA's   :9        NA's   :6      NA's   :11      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    astonished       at-ease         at-rest        attentive    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.000   Min.   :0.000   Min.   :0.000   Min.   :0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.000   1st Qu.:1.000   1st Qu.:1.000   1st Qu.:1.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :0.000   Median :2.000   Median :1.000   Median :1.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.127   Mean   :1.588   Mean   :1.202   Mean   :1.179  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:0.000   3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:2.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.000   Max.   :3.000   Max.   :3.000   Max.   :3.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :13      NA's   :17      NA's   :17      NA's   :6      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       blue            bored           calm        clutched-up    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.00   Min.   :0.000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:1.00   1st Qu.:1.000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :0.0000   Median :1.00   Median :2.000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.3739   Mean   :1.31   Mean   :1.549   Mean   :0.3726  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:1.0000   3rd Qu.:2.00   3rd Qu.:2.000   3rd Qu.:1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.0000   Max.   :3.00   Max.   :3.000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :5        NA's   :4      NA's   :82      NA's   :23      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    confident        content        delighted        depressed     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.000   Min.   :0.000   Min.   :0.0000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:1.000   1st Qu.:1.000   1st Qu.:0.0000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :2.000   Median :1.000   Median :1.0000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :1.491   Mean   :1.447   Mean   :0.7751   Mean   :0.4107  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:1.0000   3rd Qu.:1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.000   Max.   :3.000   Max.   :3.0000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :7       NA's   :22      NA's   :6        NA's   :17      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    determined      distressed         drowsy           dull       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.000   Min.   :0.0000   Min.   :0.000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.000   1st Qu.:0.0000   1st Qu.:0.000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :1.000   Median :0.0000   Median :1.000   Median :1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :1.041   Mean   :0.3963   Mean   :1.162   Mean   :0.7597  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:2.000   3rd Qu.:1.0000   3rd Qu.:2.000   3rd Qu.:1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.000   Max.   :3.0000   Max.   :3.000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :7       NA's   :8        NA's   :12      NA's   :9       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      elated         energetic       enthusiastic       excited      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :0.0000   Median :1.0000   Median :1.0000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.5246   Mean   :0.8416   Mean   :0.9203   Mean   :0.7159  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:2.0000   3rd Qu.:1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.0000   Max.   :3.0000   Max.   :3.0000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :15       NA's   :6        NA's   :6        NA's   :6       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     fearful         frustrated      full-of-pep         gloomy     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.0000   Min.   :0.0000   Min.   :0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :0.0000   Median :0.0000   Median :1.0000   Median :0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.1324   Mean   :0.4901   Mean   :0.8082   Mean   :0.398  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:0.0000   3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:1.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.0000   Max.   :3.0000   Max.   :3.0000   Max.   :3.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :20       NA's   :11       NA's   :12       NA's   :12     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     grouchy           guilty           happy          hostile      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.0000   Min.   :0.000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :0.0000   Median :0.0000   Median :1.000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.4724   Mean   :0.1817   Mean   :1.225   Mean   :0.2919  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:1.0000   3rd Qu.:0.0000   3rd Qu.:2.000   3rd Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.0000   Max.   :3.0000   Max.   :3.000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :5        NA's   :5        NA's   :16      NA's   :11      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     inspired         intense         interested      irritable    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.0000   Min.   :0.000   Min.   :0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.000   1st Qu.:0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :0.0000   Median :0.0000   Median :1.000   Median :0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.5879   Mean   :0.6868   Mean   :1.144   Mean   :0.551  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:1.0000   3rd Qu.:1.0000   3rd Qu.:2.000   3rd Qu.:1.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.0000   Max.   :3.0000   Max.   :3.000   Max.   :3.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :6        NA's   :7        NA's   :12      NA's   :16     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     jittery           kindly          lively           lonely      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.000   Min.   :0.0000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:0.000   1st Qu.:0.0000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :0.0000   Median :1.000   Median :1.0000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.5925   Mean   :1.184   Mean   :0.9205   Mean   :0.4702  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:1.0000   3rd Qu.:2.000   3rd Qu.:2.0000   3rd Qu.:1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.0000   Max.   :3.000   Max.   :3.0000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :6        NA's   :2060    NA's   :10       NA's   :6       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     nervous           placid         pleased           proud       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.000   Min.   :0.0000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:1.000   1st Qu.:0.0000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :0.0000   Median :1.000   Median :1.0000   Median :1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.3537   Mean   :1.198   Mean   :0.9009   Mean   :0.9427  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:1.0000   3rd Qu.:2.000   3rd Qu.:1.0000   3rd Qu.:2.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.0000   Max.   :3.000   Max.   :3.0000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :17       NA's   :19      NA's   :13       NA's   :7       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    quiescent          quiet          relaxed           sad        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.000   Min.   :0.000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:1.000   1st Qu.:1.000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :1.0000   Median :1.000   Median :2.000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.6519   Mean   :1.394   Mean   :1.677   Mean   :0.3438  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:1.0000   3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.0000   Max.   :3.000   Max.   :3.000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :136      NA's   :5       NA's   :7       NA's   :10      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    satisfied         scared          scornful          serene    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.000   Min.   :0.0000   Min.   :0.0000   Min.   :0.00  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:1.000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:1.00  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :1.000   Median :0.0000   Median :0.0000   Median :1.00  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :1.344   Mean   :0.1668   Mean   :0.1687   Mean   :1.18  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:2.000   3rd Qu.:0.0000   3rd Qu.:0.0000   3rd Qu.:2.00  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.000   Max.   :3.0000   Max.   :3.0000   Max.   :3.00  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :7       NA's   :10       NA's   :2058     NA's   :12    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      sleepy         sluggish        sociable         sorry       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.000   Min.   :0.000   Min.   :0.000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.000   1st Qu.:0.000   1st Qu.:1.000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :1.000   Median :1.000   Median :1.000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :1.246   Mean   :1.171   Mean   :1.336   Mean   :0.2015  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.000   Max.   :3.000   Max.   :3.000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :16      NA's   :8       NA's   :6       NA's   :15      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      still           strong        surprised         tense       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.000   Min.   :0.000   Min.   :0.000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:1.000   1st Qu.:0.000   1st Qu.:0.000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :1.000   Median :1.000   Median :0.000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :1.182   Mean   :1.048   Mean   :0.155   Mean   :0.5219  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:0.000   3rd Qu.:1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.000   Max.   :3.000   Max.   :3.000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :12      NA's   :7       NA's   :6       NA's   :10      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>      tired          unhappy           upset           vigorous     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.000   Min.   :0.0000   Min.   :0.0000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:1.000   1st Qu.:0.0000   1st Qu.:0.0000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :1.000   Median :0.0000   Median :0.0000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :1.386   Mean   :0.3727   Mean   :0.3086   Mean   :0.6397  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:2.000   3rd Qu.:1.0000   3rd Qu.:0.0000   3rd Qu.:1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.000   Max.   :3.0000   Max.   :3.0000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :10      NA's   :5        NA's   :8        NA's   :10      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>     wakeful       warmhearted      wide-awake        anxious      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.000   Min.   :0.000   Min.   :0.0000   Min.   :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:1.000   1st Qu.:1.000   1st Qu.:0.0000   1st Qu.:0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :1.000   Median :1.000   Median :1.0000   Median :0.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :1.186   Mean   :1.453   Mean   :0.9405   Mean   :0.6717  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:2.0000   3rd Qu.:1.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :3.000   Max.   :3.000   Max.   :3.0000   Max.   :3.0000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :10      NA's   :7       NA's   :12       NA's   :1849    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>       idle           cheerful        inactive        tranquil    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.0000   Min.   :0.000   Min.   :0.000   Min.   :0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:0.0000   1st Qu.:0.000   1st Qu.:0.000   1st Qu.:1.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :1.0000   Median :1.000   Median :1.000   Median :1.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :0.9561   Mean   :0.977   Mean   :1.078   Mean   :1.287  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:2.0000   3rd Qu.:2.000   3rd Qu.:2.000   3rd Qu.:2.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :9.0000   Max.   :3.000   Max.   :3.000   Max.   :3.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :1846     NA's   :1850    NA's   :1846    NA's   :1843   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>        EA              TA              PA             NegAff      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   : 0.00   Min.   : 0.00   Min.   : 0.000   Min.   : 0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.: 6.00   1st Qu.: 8.00   1st Qu.: 4.000   1st Qu.: 0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :11.00   Median :11.00   Median : 9.000   Median : 2.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :11.74   Mean   :11.34   Mean   : 9.735   Mean   : 2.982  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:17.00   3rd Qu.:14.00   3rd Qu.:14.000   3rd Qu.: 4.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :30.00   Max.   :33.00   Max.   :30.000   Max.   :28.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :598     NA's   :641     NA's   :572      NA's   :592     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Extraversion    Neuroticism         Lie         Sociability    </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   : 0.00   Min.   : 0.00   Min.   :0.000   Min.   : 0.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:11.00   1st Qu.: 7.00   1st Qu.:1.000   1st Qu.: 6.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :14.00   Median :10.00   Median :2.000   Median : 8.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :13.55   Mean   :10.39   Mean   :2.113   Mean   : 7.717  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:16.68   3rd Qu.:14.00   3rd Qu.:3.000   3rd Qu.:10.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :24.00   Max.   :24.00   Max.   :9.000   Max.   :13.000  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :6       NA's   :6       NA's   :6       NA's   :6       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>   Impulsivity      MSQ_Round     scale            ID             exper     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :0.000   Min.   : 6.00   msq:1840   Min.   :   1.0   Rim.1  : 342  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:3.000   1st Qu.: 9.00   r  :2056   1st Qu.:  30.0   Rim.2  : 342  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :4.000   Median :13.00              Median :  67.0   sam-1  : 324  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :4.449   Mean   :13.44              Mean   : 159.4   sam-2  : 324  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:6.000   3rd Qu.:16.00              3rd Qu.: 140.0   FLAT   : 170  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :9.000   Max.   :23.00              Max.   :4184.0   MAPS   : 160  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  NA's   :6       NA's   :1099                                (Other):2234  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>    condition          TOD            TOD24      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Min.   :1.000   Min.   : 5.00   Min.   : 5.00  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  1st Qu.:1.000   1st Qu.: 9.00   1st Qu.: 9.00  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Median :2.000   Median :13.00   Median :15.00  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Mean   :2.568   Mean   :13.19   Mean   :18.13  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  3rd Qu.:4.000   3rd Qu.:16.00   3rd Qu.:19.50  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  Max.   :5.000   Max.   :22.50   Max.   :46.50  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>                  NA's   :1       NA's   :1102   </span>
 </code></pre></div>
     </div>
   </div>
@@ -374,7 +567,7 @@ The original version of the MSQ included 70 items. Intermediate analyses (done w
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
       </footer></div>
