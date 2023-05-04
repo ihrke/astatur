@@ -2,7 +2,7 @@
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 <!-- badges: end -->
 
-# astatur <img src="man/figures/logo.png" align="right" alt="" width="120" />
+# astatur <img src="man/figures/logo.jpeg" align="right" height="139" />
 
 [Homepage](https://ihrke.github.io/astatur/)
 
