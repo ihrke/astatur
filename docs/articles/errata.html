@@ -86,7 +86,7 @@
     
     
 <p>Even though we were trying to get everything right the first time,
-but small errors can (and do!) slip through the cracks. Here we keep an
+small errors can (and do!) slip through the cracks. Here we keep an
 updated list of errors and mistakes that have been gracefully pointed
 out to us by attentive readers.</p>
 <div class="section level3">
@@ -148,12 +148,32 @@ problem can be solved by applying the function
 <code>zap_formats()</code>:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">workout</span> <span class="op">&lt;-</span> <span class="fu">haven</span><span class="fu">::</span><span class="fu"><a href="https://haven.tidyverse.org/reference/zap_formats.html" class="external-link">zap_formats</a></span><span class="op">(</span><span class="va">workout</span><span class="op">)</span></span></code></pre></div>
+<ul>
+<li>On page 89, we write</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">country</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Dutch"</span>, <span class="st">"Wales"</span>, <span class="st">"Scotland"</span>, <span class="st">"Holland"</span>,</span>
+<span>                    <span class="st">"Netherlands"</span>, <span class="st">"United Kingdom"</span>, <span class="st">"England"</span>,</span>
+<span>                    <span class="st">"Northern Ireland"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="va">country</span> <span class="op">&lt;-</span> <span class="fu">fct_collapse</span><span class="op">(</span><span class="va">country</span>,</span>
+<span>                        Netherlands <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Friesland"</span>, <span class="st">"Holland"</span>, <span class="st">"Netherlands"</span><span class="op">)</span>,</span>
+<span>                        `United Kingdom` <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"Wales"</span>, <span class="st">"Scotland"</span>,</span>
+<span>                                             <span class="st">"United Kingdom"</span>, <span class="st">"England"</span>,</span>
+<span>                                             <span class="st">"Northern Ireland"</span><span class="op">)</span><span class="op">)</span>                    </span></code></pre></div>
+<p>Running this code will collapse the factor to categories
+“Netherlands”, “United Kingdom” and “Dutch”. Our intention was that
+category “Dutch” from the factor specification should be subsumed in the
+“Netherlands” category. Therefore, “Dutch” should be relabeled as
+“Friesland” or “Dutch” should be included in the list in the second
+statement using <code>fct_collapse()</code>.</p>
 </div>
 <div class="section level3">
 <h3 id="acknowledgments">Acknowledgments<a class="anchor" aria-label="anchor" href="#acknowledgments"></a>
 </h3>
 <p>Thanks to Dan Mønster (<a href="http://au.dk/en/danm@econ.au.dk" class="external-link uri">http://au.dk/en/danm@econ.au.dk</a>) for thoroughly reading
 and commenting on the book!</p>
+<p>Thanks to Benjamin Holen Dybendal (<a href="https://www.ntnu.no/ansatte/benjamin.dybendal" class="external-link uri">https://www.ntnu.no/ansatte/benjamin.dybendal</a>) for
+pointing out errors in the book.</p>
 </div>
   </div>
 

@@ -14,7 +14,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-Even though we were trying to get everything right the first time, but small errors can (and do!) slip through the cracks. Here we keep an updated list of errors and mistakes that have been gracefully pointed out to us by attentive readers.
+Even though we were trying to get everything right the first time, small errors can (and do!) slip through the cracks. Here we keep an updated list of errors and mistakes that have been gracefully pointed out to us by attentive readers.
 
 ### Problems in the text
 
@@ -45,6 +45,26 @@ The mutate function may give an error (with recent versions of R and the `dplyr`
 workout <- haven::zap_formats(workout)
 ```
 
+- On page 89, we write
+
+```r
+country <- factor(c("Dutch", "Wales", "Scotland", "Holland",
+                    "Netherlands", "United Kingdom", "England",
+                    "Northern Ireland"))
+country <- fct_collapse(country,
+                        Netherlands = c("Friesland", "Holland", "Netherlands"),
+                        `United Kingdom` = c("Wales", "Scotland",
+                                             "United Kingdom", "England",
+                                             "Northern Ireland"))                    
+```
+
+Running this code will collapse the factor to categories "Netherlands", "United Kingdom" and "Dutch". Our intention was that category "Dutch" from the factor specification should be subsumed in the "Netherlands" category. Therefore, "Dutch" should be relabeled as "Friesland" or "Dutch" should be included in the list in the second statement using `fct_collapse()`.
+
+
+
 ### Acknowledgments
 
 Thanks to Dan Mønster (http://au.dk/en/danm@econ.au.dk) for thoroughly reading and commenting on the book!
+
+Thanks to Benjamin Holen Dybendal (https://www.ntnu.no/ansatte/benjamin.dybendal) for pointing out errors in the book.
+

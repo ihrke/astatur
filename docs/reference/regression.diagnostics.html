@@ -123,6 +123,8 @@ removed from the analysis (Pardoe, 2006, p. 171).</p></li>
     <h2>Examples</h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="va">mod</span><span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/stats/lm.html" class="external-link">lm</a></span><span class="op">(</span><span class="va">Sepal.Length</span> <span class="op">~</span> <span class="va">Sepal.Width</span> <span class="op">*</span> <span class="va">Petal.Length</span>, data<span class="op">=</span><span class="va">iris</span><span class="op">)</span></span></span>
 <span class="r-in"><span><span class="fu">regression.diagnostics</span><span class="op">(</span><span class="va">mod</span><span class="op">)</span></span></span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> there are higher-order terms (interactions) in this model</span>
+<span class="r-msg co"><span class="r-pr">#&gt;</span> consider setting type = 'predictor'; see ?vif</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Tests of linear model assumptions</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> ---------------------------------</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
@@ -148,7 +150,7 @@ removed from the analysis (Pardoe, 2006, p. 171).</p></li>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 8</span> functional form     global    RESE…    5.85    0.003<span style="text-decoration: underline;">60</span>  0.05 Problem -       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;"> 9</span> outliers            global    Cook…    0.142  <span style="color: #BB0000;">NA</span>        1    No Pro… +       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">10</span> outliers            global    Bonf…    3.13    0.314    0.05 No Pro… +       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">11</span> autocorrelation     global    Durb…   -<span style="color: #BB0000;">0.034</span><span style="color: #BB0000; text-decoration: underline;">6</span>  0.856    0.05 No Pro… +       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> <span style="color: #BCBCBC;">11</span> autocorrelation     global    Durb…   -<span style="color: #BB0000;">0.034</span><span style="color: #BB0000; text-decoration: underline;">6</span>  0.792    0.05 No Pro… +       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> Outliers:</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> -----------</span>
