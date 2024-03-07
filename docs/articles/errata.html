@@ -166,6 +166,33 @@ category “Dutch” from the factor specification should be subsumed in the
 “Netherlands” category. Therefore, “Dutch” should be relabeled as
 “Friesland” or “Dutch” should be included in the list in the second
 statement using <code>fct_collapse()</code>.</p>
+<ul>
+<li>In section 12.1.1 on page 327, we give a more complex example of
+using <code>pivot_longer()</code> to convert a wide
+<code>data.frame</code> into long format. The example is:</li>
+</ul>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">depression.wide</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
+<span>  <span class="fu">pivot_longer</span><span class="op">(</span>cols<span class="op">=</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html" class="external-link">starts_with</a></span><span class="op">(</span><span class="st">"week"</span><span class="op">)</span> <span class="op">|</span> <span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html" class="external-link">starts_with</a></span><span class="op">(</span><span class="st">"BDI"</span><span class="op">)</span>,</span>
+<span>               names_to <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">".value"</span>, <span class="st">"session"</span><span class="op">)</span>,</span>
+<span>               names_pattern<span class="op">=</span><span class="st">"(BDI|week)([0-9+])"</span>,</span>
+<span>               values_drop_na<span class="op">=</span><span class="cn">T</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
+<p>There is a mistake in the line
+<code>names_pattern="(BDI|week)([0-9+])"</code>. The regular expression
+<code>[0-9+]</code> only captures a single integer and hence the code
+will not work as intended as values such as “BDI10” or “week12” will be
+coded as <code>session=1</code> instead of <code>session=10</code> and
+<code>session=12</code>, respectively. The correct regular expression
+should be <code>"(BDI|week)([0-9]+)"</code> such that the full
+code-example should read</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">depression.wide</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span> </span>
+<span>  <span class="fu">pivot_longer</span><span class="op">(</span>cols<span class="op">=</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html" class="external-link">starts_with</a></span><span class="op">(</span><span class="st">"week"</span><span class="op">)</span> <span class="op">|</span> <span class="fu"><a href="https://tidyselect.r-lib.org/reference/starts_with.html" class="external-link">starts_with</a></span><span class="op">(</span><span class="st">"BDI"</span><span class="op">)</span>,</span>
+<span>               names_to <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">".value"</span>, <span class="st">"session"</span><span class="op">)</span>,</span>
+<span>               names_pattern<span class="op">=</span><span class="st">"(BDI|week)([0-9]+)"</span>,</span>
+<span>               values_drop_na<span class="op">=</span><span class="cn">T</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html" class="external-link">%&gt;%</a></span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html" class="external-link">head</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level3">
 <h3 id="acknowledgments">Acknowledgments<a class="anchor" aria-label="anchor" href="#acknowledgments"></a>

@@ -60,7 +60,26 @@ country <- fct_collapse(country,
 
 Running this code will collapse the factor to categories "Netherlands", "United Kingdom" and "Dutch". Our intention was that category "Dutch" from the factor specification should be subsumed in the "Netherlands" category. Therefore, "Dutch" should be relabeled as "Friesland" or "Dutch" should be included in the list in the second statement using `fct_collapse()`.
 
+- In section 12.1.1 on page 327, we give a more complex example of using `pivot_longer()` to convert a wide `data.frame` into long format. The example is:
 
+```r
+depression.wide %>% 
+  pivot_longer(cols=starts_with("week") | starts_with("BDI"),
+               names_to = c(".value", "session"),
+               names_pattern="(BDI|week)([0-9+])",
+               values_drop_na=T) %>%
+  head()
+```
+There is a mistake in the line `names_pattern="(BDI|week)([0-9+])"`. The regular expression `[0-9+]` only captures a single integer and hence the code will not work as intended as values such as "BDI10" or "week12" will be coded as `session=1` instead of `session=10` and `session=12`, respectively. The correct regular expression should be `"(BDI|week)([0-9]+)"` such that the full code-example should read
+
+```r
+depression.wide %>% 
+  pivot_longer(cols=starts_with("week") | starts_with("BDI"),
+               names_to = c(".value", "session"),
+               names_pattern="(BDI|week)([0-9]+)",
+               values_drop_na=T) %>%
+  head()
+```
 
 ### Acknowledgments
 
