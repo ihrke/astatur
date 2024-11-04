@@ -28,6 +28,7 @@ Even though we were trying to get everything right the first time, small errors 
 - Figure 8.1: There should not be a hat on the epsilon in the figure.
 - Section 12.4, after output of `anova(mod.linear,mod.quadratic, mod.cubic)` we write: "[...] but that the cubic model does not outperform the quadratic model, $\chi^2(1) = 0.27, p = 0.27$."
   - The Chi-square value is wrong. It should be 1.21, not 0.27 (which is the p-value, printed twice).
+- On page 367 we mention the function `smc()` that calculates the squared multiple correlation and we write that it is part of the `dplyr` package. This is incorrect, as `smc()` is implemented in the `psych` package. 
  
 ### Problems with code 
  

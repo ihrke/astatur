@@ -1,108 +1,38 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>/404.html</loc>
-  </url>
-  <url>
-    <loc>/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>/articles/errata.html</loc>
-  </url>
-  <url>
-    <loc>/articles/index.html</loc>
-  </url>
-  <url>
-    <loc>/authors.html</loc>
-  </url>
-  <url>
-    <loc>/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/ChickWeight.html</loc>
-  </url>
-  <url>
-    <loc>/reference/astatur.all.used.packages.html</loc>
-  </url>
-  <url>
-    <loc>/reference/condisc.html</loc>
-  </url>
-  <url>
-    <loc>/reference/deaths.html</loc>
-  </url>
-  <url>
-    <loc>/reference/depression.html</loc>
-  </url>
-  <url>
-    <loc>/reference/depression.wide.html</loc>
-  </url>
-  <url>
-    <loc>/reference/diet.html</loc>
-  </url>
-  <url>
-    <loc>/reference/epi.bfi.html</loc>
-  </url>
-  <url>
-    <loc>/reference/flats.html</loc>
-  </url>
-  <url>
-    <loc>/reference/gifts.html</loc>
-  </url>
-  <url>
-    <loc>/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>/reference/msq.html</loc>
-  </url>
-  <url>
-    <loc>/reference/newStudents.html</loc>
-  </url>
-  <url>
-    <loc>/reference/olympic.html</loc>
-  </url>
-  <url>
-    <loc>/reference/present.html</loc>
-  </url>
-  <url>
-    <loc>/reference/regression.diagnostics.html</loc>
-  </url>
-  <url>
-    <loc>/reference/relicoef.html</loc>
-  </url>
-  <url>
-    <loc>/reference/stroop.html</loc>
-  </url>
-  <url>
-    <loc>/reference/studentHeights.html</loc>
-  </url>
-  <url>
-    <loc>/reference/theme_astatur.html</loc>
-  </url>
-  <url>
-    <loc>/reference/theme_spss.html</loc>
-  </url>
-  <url>
-    <loc>/reference/titanic.html</loc>
-  </url>
-  <url>
-    <loc>/reference/training.html</loc>
-  </url>
-  <url>
-    <loc>/reference/training2.html</loc>
-  </url>
-  <url>
-    <loc>/reference/values.html</loc>
-  </url>
-  <url>
-    <loc>/reference/vimp.html</loc>
-  </url>
-  <url>
-    <loc>/reference/workout.html</loc>
-  </url>
-  <url>
-    <loc>/reference/workout2.html</loc>
-  </url>
-  <url>
-    <loc>/reference/workout3.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>/404.html</loc></url>
+<url><loc>/LICENSE.html</loc></url>
+<url><loc>/articles/errata.html</loc></url>
+<url><loc>/articles/index.html</loc></url>
+<url><loc>/authors.html</loc></url>
+<url><loc>/index.html</loc></url>
+<url><loc>/reference/ChickWeight.html</loc></url>
+<url><loc>/reference/astatur.all.used.packages.html</loc></url>
+<url><loc>/reference/condisc.html</loc></url>
+<url><loc>/reference/deaths.html</loc></url>
+<url><loc>/reference/depression.html</loc></url>
+<url><loc>/reference/depression.wide.html</loc></url>
+<url><loc>/reference/diet.html</loc></url>
+<url><loc>/reference/epi.bfi.html</loc></url>
+<url><loc>/reference/flats.html</loc></url>
+<url><loc>/reference/gifts.html</loc></url>
+<url><loc>/reference/index.html</loc></url>
+<url><loc>/reference/msq.html</loc></url>
+<url><loc>/reference/newStudents.html</loc></url>
+<url><loc>/reference/olympic.html</loc></url>
+<url><loc>/reference/present.html</loc></url>
+<url><loc>/reference/regression.diagnostics.html</loc></url>
+<url><loc>/reference/relicoef.html</loc></url>
+<url><loc>/reference/stroop.html</loc></url>
+<url><loc>/reference/studentHeights.html</loc></url>
+<url><loc>/reference/theme_astatur.html</loc></url>
+<url><loc>/reference/theme_spss.html</loc></url>
+<url><loc>/reference/titanic.html</loc></url>
+<url><loc>/reference/training.html</loc></url>
+<url><loc>/reference/training2.html</loc></url>
+<url><loc>/reference/values.html</loc></url>
+<url><loc>/reference/vimp.html</loc></url>
+<url><loc>/reference/workout.html</loc></url>
+<url><loc>/reference/workout2.html</loc></url>
+<url><loc>/reference/workout3.html</loc></url>
 </urlset>
+
