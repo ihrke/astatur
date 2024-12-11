@@ -30,7 +30,7 @@ vimp <- function(regmod){
   scale_y_continuous(breaks = seq(0,1,by=0.1)) +
   geom_hline(aes(yintercept= 0.1, linetype = "<0.1, small"), colour= 'red') +
   geom_hline(aes(yintercept= 0.2, linetype = ">0.2, large"), colour= 'blue') +
-  guides(fill=F)+
+  guides(fill="none")+
   scale_linetype_manual(name = "effect-size", values = c(1,1),
                         guide = guide_legend(override.aes = list(color = c("red", "blue"))))
 }
